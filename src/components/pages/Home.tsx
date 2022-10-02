@@ -65,7 +65,7 @@ export const Home = () => {
 							</div>
 							<div className="info-box">
 								<h5 className="home-info">
-									+<span>{days}</span> Days on Operation
+									+<span>{days}</span>  Days on Operation
 								</h5>
 							</div>
 						</div>
@@ -150,7 +150,7 @@ export const Home = () => {
 						</div>
 					</div>
 
-					<div style={{padding: "0 4rem"}}>
+					<div style={{padding: "0 4rem", marginBottom:"5rem"}}>
 						<h2>WE ACCEPT CRYPTO</h2>
 						<div className="cryptos-container">
 							<img

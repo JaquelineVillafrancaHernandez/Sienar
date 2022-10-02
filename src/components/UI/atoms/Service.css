@@ -1,6 +1,6 @@
 .service-container {
 	width: 70%;
-	height: 20rem;
+	height: 30rem;
 	position: relative;
 	text-align: center;
 	color: white;
@@ -9,16 +9,21 @@
 }
 .container-left {
 	justify-content: flex-start;
+	text-align: center;
 }
 .container-right {
 	justify-content: flex-end;
 }
+
 @media (min-width: 992px) {
 	.service-container {
 		height: 30rem;
 		width: 50%;
+		
 	}
 }
+
+
 .left {
 	display: flex;
 	justify-content: flex-start;
@@ -50,14 +55,14 @@
 
 .text-positionleft {
 	position: absolute;
-	top: 48%;
-	left: 5rem;
+	top: 40%;
+	left: 8rem;
 	margin: 0;
 }
 .text-positionright {
 	position: absolute;
-	top: 48%;
-	right: 5rem;
+	top: 40%;
+	right: 8rem;
 	margin: 0;
 }
 
@@ -78,6 +83,24 @@
 	top: 40%;
 	*/
 	text-decoration: underline;
+}
+
+@media (max-width: 590px) {
+	.text-positionleft {
+		position: absolute;
+		top: 40%;
+		left: 2rem;
+		margin: 0;
+		font-size: 2rem;
+	}
+
+	.text-positionright {
+		position: absolute;
+		top: 40%;
+		right: 2rem;
+		margin: 0;
+		font-size: 2rem;
+	}
 }
 
 /*
