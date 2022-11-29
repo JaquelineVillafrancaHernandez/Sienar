@@ -1,5 +1,10 @@
 .about-content {
-	padding: 0 2rem;
+	padding: 0 8rem;
+}
+@media (max-width: 480px) {
+	.about-content {
+		padding: 0 4rem;
+	}
 }
 
 .about h5 {
@@ -20,16 +25,26 @@
 		gap: 7rem;
 	}
 }
+
+
+
 .col-left {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
 	.col-left {
 		width: 50%;
 		display: flex;
 		flex-direction: column;
+	}
+}
+@media (max-width: 480px) {
+	.col-left {
+		width: 100%;
+		display: flex;
+		margin-left:-4rem;
 	}
 }
 
@@ -44,9 +59,21 @@
 form {
 	width: 90%;
 }
+@media (max-width: 992px) {
+	.col-right {
+		margin-top: 0;
+		margin-left:-4rem;
+	}
+}
+
 label {
 	color: var(--mainColor);
 	font-size: 2rem;
+}
+@media (max-width: 480px) {
+	label {
+		width:100%;
+	}
 }
 input {
 	width: 100%;
@@ -101,9 +128,21 @@ input[type="submit"] {
 		width: 50%;
 	}
 }
+@media (min-width: 992px) {
+	.col-right {
+		width: 50%;
+	}
+}
+@media (max-width: 992px) {
+	.col-right {
+		margin-top:-10rem;
+	}
+}
+
 
 .col-right > * {
 	margin: 0;
+	margin-left:6.5rem;
 }
 .mail {
 	color: var(--secondaryColor);
@@ -127,4 +166,11 @@ input[type="submit"] {
 	left: 50%;
 
 	transform: translate(-50%, -50%);
+}
+@media (min-width: 992px) and (orientation: landscape) {
+	.col-right > * {
+		margin: 0;
+		margin-left:-7rem;
+		padding-right:7rem;
+	}
 }

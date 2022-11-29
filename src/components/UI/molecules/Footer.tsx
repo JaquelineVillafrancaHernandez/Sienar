@@ -1,8 +1,11 @@
 import React from "react";
 import {Logo, Instagram, Linkedin} from "src/components/UI/atoms/icons";
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
+
 
 export const Footer = () => {
+	const [t, i18n] = useTranslation("global");
 	return (
 		<footer>
 			<div className="main-content">
@@ -23,7 +26,7 @@ export const Footer = () => {
 				</div>
 			</div>
 			<div className="privacy-content">
-				<a href="https://sienar.dev/aviso-privacidad">Terminos y condiciones</a>
+				<a href="https://sienar.dev/aviso-privacidad">{t("conditions.terms-conditions")}</a>
 			</div>
 		</footer>
 	);

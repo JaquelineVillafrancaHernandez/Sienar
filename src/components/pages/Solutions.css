@@ -31,6 +31,16 @@
 		order: 2;
 	}
 }
+@media (max-width: 480px) {
+	.col-content {
+		padding: 0 0rem;
+
+	}
+	.col-content:nth-child(even) {
+		order: -1;
+	}
+}
+
 .col-content p {
 	text-align: justify;
 }
@@ -50,4 +60,13 @@
 	left: 50%;
 
 	transform: translate(-50%, -50%);
+}
+
+.text {
+	padding:0 8rem;
+}
+@media (max-width: 480px) {
+	.text {
+		padding:0 4rem;
+	}
 }

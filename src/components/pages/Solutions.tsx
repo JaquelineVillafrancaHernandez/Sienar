@@ -11,6 +11,7 @@ import {
 	LogoV,
 } from "src/components/UI/atoms/icons";
 import "./Solutions.css";
+import { useTranslation } from "react-i18next";
 
 export const Solutions = () => {
 	let {service} = useParams();
@@ -20,6 +21,7 @@ export const Solutions = () => {
 	const machine = useRef(null);
 	const robotic = useRef(null);
 	const blockchain = useRef(null);
+	const [t, i18n] = useTranslation("global");
 
 	function scrollTo(elementRef: any) {
 		window.scrollTo({
@@ -51,35 +53,31 @@ export const Solutions = () => {
 				<div className="logo-absolute">
 					<LogoV />
 				</div>
-			</div>
-			<h2 className="center">software development For The Enterprise</h2>
-			<div style={{padding: "0 4rem"}}>
+			</div >
+			<h2 className="center" style={{padding: "0 2rem"}}>{t("home.title")}</h2>
+			<div className="text">
 				<p className="">
-					With experience in machine learning and software development, we use
-					and develop technology to increase the competitiveness of your
-					business by focusing on user experience and innovation.
+				{t("solutions.first-paragraph")}
 				</p>
 
-				<div className="row" ref={web}>
+				<div className="row" >
 					<div className="col-img">
 						<Web />
 					</div>
 					<div className="col-content">
-						<h3>WEB Development</h3>
+						<h3>{t("home.web-development")}</h3>
 						<p>
-							We develop web apps and backend solutions with engaging user flows
-							to enhance user experience, we specialize in building enterprise
-							websites.
+						{t("solutions.web-description")}
+		
 						</p>
 					</div>
 				</div>
 
 				<div className="row" ref={mobile}>
 					<div className="col-content">
-						<h3>MOBILE APPS</h3>
+						<h3>{t("home.mobile-apps")}</h3>
 						<p>
-							We develop high-quality mobile apps to promote your products or
-							services without losing sight of your budget and schedule.
+							{t("solutions.mobile-description")}
 						</p>
 					</div>
 					<div className="col-img">
@@ -92,24 +90,18 @@ export const Solutions = () => {
 						<Machine />
 					</div>
 					<div className="col-content">
-						<h3>MACHINE LEARNING</h3>
+						<h3>{t("home.machine-learning")}</h3>
 						<p>
-							AI approaches and business applications have gained momentum in
-							recent years and have enabled companies to streamline operations,
-							improve performance and reduce uptime by relying on
-							decision-making systems.
+							{t("solutions.mc-description")}
 						</p>
 					</div>
 				</div>
 
 				<div className="row" ref={cloud}>
 					<div className="col-content">
-						<h3>CLOUD SERVICES</h3>
+						<h3>{t("home.cloud-services")}</h3>
 						<p>
-							Cloud solutions allow faster responses when processing large
-							amounts of data. Save your business valuable time and money by
-							deploying intelligent strategies and managed services in the
-							cloud.
+							{t("solutions.cloud-services")}
 						</p>
 					</div>
 					<div className="col-img">
@@ -122,24 +114,18 @@ export const Solutions = () => {
 						<Robotic />
 					</div>
 					<div className="col-content">
-						<h3>ROBOTIC VISION</h3>
+						<h3>{t("home.robotic-vision")}</h3>
 						<p>
-							Leverage the latest technologies on image processing for
-							appearance inspection, alignment measurement, feature recognition,
-							code reading, vision-guided robotics, position verification, and
-							more.
+							{t("solutions.robotic-description")}
 						</p>
 					</div>
 				</div>
 
 				<div className="row" ref={blockchain}>
 					<div className="col-content">
-						<h3>BLOCKCHAIN </h3>
+						<h3>{t("home.blockchain")}</h3>
 						<p>
-							Develop various DeFi business models with smart contracts and
-							decentralized organizations. Blockchain development is a
-							cost-effective way to address the challenges faced by traditional
-							centralized enterprises.
+							{t("solutions.blockchain-description")}
 						</p>
 					</div>
 					<div className="col-img">

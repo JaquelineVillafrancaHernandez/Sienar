@@ -1,0 +1,53 @@
+{
+    "home":{
+        "projects": "Proyectos Concluídos",
+        "operation-days": " Días en operación",
+        "title" : "Desarrollo de software para la empresa",
+        "first-paragraph" : "Con experiencia en machine learning y desarrollo de software, utilizamos y desarrollamos tecnología para aumentar la competitividad de tu negocio centrándonos en la experiencia del usuario y la innovación como los principales ejes de nuestro trabajo.",
+        "web-development": "DESARROLLO WEB",
+        "mobile-apps": "APLICACIONES MÓBILES",
+        "cloud-services":"SERVICIOS EN LA NUBE",
+        "machine-learning":" iNTELIGENCIA ARTIFICIAL",
+        "robotic-vision":"VISIÓN PARA ROBOTS",
+        "blockchain": "BLOCKCHAIN",
+        "our-process":"Nuestro proceso",
+        "analyse": "Análisis",
+        "strategy":"Estrategia",
+        "implement":"Implementación",
+        "development":"Desarrollo",
+        "follow-up":"Seguimiento",
+        "crypto":"ACEPTAMOS CRYPTO"
+    },
+
+    "about":{
+        "title":"Sobre Nosotros",
+        "first-paragraph": "Sienar es una agencia que desarrolla soluciones de software. Nuestros ingenieros son autodidactas, pragmáticos y dedicados a ofrecer la mejor experiencia de usuario y calidad. Nos sumergimos directamente en los requisitos del proyecto para comprender todas las variables involucradas y trabajamos codo a codo con nuestros clientes en un esquema de trabajo práctico.",
+        "second-paragraph": "A medida que los nuevos enfoques con machine learning y tecnologías basadas en blockchain continúan evolucionando rápidamente en todo el mundo, queremos convertirnos en una empresa internacional que contribuya activamente a la investigación científica y la generación de nuevo conocimiento. Queremos marcar la diferencia demostrando el potencial de las nuevas tecnologías para el éxito empresarial."
+    },
+
+    "solutions":{
+        "first-paragraph":"Con experiencia en machine learning y desarrollo de software, utilizamos y desarrollamos tecnología para aumentar la competitividad de tu negocio centrándonos en la experiencia del usuario y la innovación como los principales ejes de nuestro trabajo.",
+        "web-description":"Desarrollamos aplicaciones web y soluciones back-end con flujos de usuarios atractivos para mejorar la experiencia del usuario. Nos especializamos en la creación de sitios y aplicaciones web empresariales",
+        "mobile-description":"Desarrollamos aplicaciones móviles de alta calidad para promocionar productos y servicios digitales que sus clientes amarán sin perder de vista su presupuesto y tiempos. Creamos apps que facilitan la vida de sus usuarios.",
+        "mc-description":"Las metodologías con IA y sus aplicaciones en la industria han cobrado impulso en los últimos años y han permitido a las empresas optimizar operaciones, mejorar el rendimiento y reducir tiempos delegando tareas a sistemas que son capaces de tomar decisiones.",
+        "cloud-services":"Las soluciones en la nube permiten respuestas más rápidas cuando se procesan grandes cantidades de datos. Ahorre tiempo y dinero valioso implementando estrategias inteligentes con servicios administrados en la nube.",
+        "robotic-description":"Usamos las últimas tecnologías en procesamiento de imágenes para inspección de calidad, medición de alineación, reconocimiento de características específicas, lectura de códigos, robótica industrial guiada por visión robótica, verificación de posición y más.",
+        "blockchain-description":"Desarrolle varios modelos de negocios con DeFi usando contratos inteligentes y organizaciones descentralizadas. El desarrollo de blockchain es una forma rentable de abordar los desafíos que enfrentan las empresas centralizadas tradicionales"
+
+    },
+
+    "contact":{
+        "drop-a-line":"Escríbenos:",
+        "name":"Nombre:",
+        "email":"Email:",
+        "message": "Mensaje:",
+        "contact":"Ponte en contacto con nosotros en:",
+        "inquiries":"Si quieres realizar una cotización, puedes escribirnos a:",
+        "other-request":"Para cualquier duda o aclaración, puedes ponerte en contacto en:"
+    },
+
+    "conditions":{
+        "terms-conditions":"Términos y Condiciones"
+
+    }
+}

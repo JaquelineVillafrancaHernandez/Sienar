@@ -1,0 +1,57 @@
+{
+    "home":{
+        "projects": "Completed Projects",
+        "operation-days": " Days on Operation",
+        "title" : "Software Development for the enterprise",
+        "first-paragraph" : "With experience in machine learning and software development, we use and develop technology to increase the competitiveness of your business by focusing on user experience and innovation as the main statutes of our work.",
+        "web-development": "WEB DEVELOPMENT",
+        "mobile-apps": "MOBILE APPS",
+        "cloud-services":"CLOUD SERVICES",
+        "machine-learning":" MACHINE LEARNING",
+        "robotic-vision":"ROBOTIC VISION",
+        "blockchain": "BLOCKCHAIN",
+        "our-process":"OUR PROCESS",
+        "analyse": "Analyse",
+        "strategy":"Strategy",
+        "implement":"Implement",
+        "development":"Development",
+        "follow-up":"Follow Up",
+        "crypto":"WE ACCEPT CRYPTO"
+
+    },
+
+    "about":{
+        "title":"About us",
+        "first-paragraph": "Sienar is an agency that develops well-made software solutions. Our engineers are self-taught, pragmatic and dedicated to deliver the best user experience and quality. We dive directly into the project's requirements to understand all the variables involved, and work side-by-side with our clients in a hands-on work scheme.",
+        "second-paragraph": "As new approaches with machine learning and blockchain continue to evolve at an accelerated pace around the world, we aim to become an international company that actively contributes to scientific research and the generation of new knowledge. We want to make a difference by demonstrating the potential of new technologies for business success."
+
+
+    },
+
+    "solutions":{
+        "first-paragraph":"With experience in machine learning and software development, we use and develop technology to increase the competitiveness of your business by focusing on user experience and innovation as the main statutes of our work.",
+        "web-description":"We develop web apps and backend solutions with engaging user flows to enhance user experience, we specialize in building enterprise websites.",
+        "mobile-description":"We develop high-quality mobile apps to promote your products or services that your customers will love without losing sight of your budget and schedule. We built apps that make life easier for your users.",
+        "mc-description":"AI approaches and business applications have gained momentum in recent years and have enabled companies to streamline operations, improve performance and reduce uptime by relying on decision-making systems.",
+        "cloud-services":"Cloud solutions allow faster responses when processing large amounts of data. Save your business valuable time and money by deploying intelligent strategies and managed services in the cloud.",
+        "robotic-description":"Leverage the latest technologies on image processing for appearance inspection, alignment measurement, feature recognition, code reading, vision-guided robotics, position verification, and more.",
+        "blockchain-description":"Develop various DeFi business models with smart contracts and decentralized organizations. Blockchain development is a cost-effective way to address the challenges faced by traditional centralized enterprises."
+    
+
+    },
+
+    "contact":{
+        "drop-a-line":"Drop us a Line:",
+        "name":"Name:",
+        "email":"Email:",
+        "message": "Message:",
+        "contact":"Or contact us:",
+        "inquiries":"For quoting inquiries please get in touch:",
+        "other-request":"For any other requests, contact:"
+    },
+    
+    "conditions":{
+        "terms-conditions":"Terms and Conditions"
+
+    }
+}

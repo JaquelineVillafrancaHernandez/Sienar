@@ -13,12 +13,20 @@ import {
 import "./NavBar.css";
 import {DarkMode} from "src/components/UI/atoms/DarkMode";
 
+//Esto lo agregué 
+import { useTranslation } from "react-i18next";
+
 export const NavBar = () => {
 	const [menuState, setMenuState] = useState(false);
+	const [language, setLanguage] =useState(false);
+
+
+	//Esto lo agregué 
+	const [t, i18n] = useTranslation("global");
 	return (
-		<nav className={menuState ? "NavbarItems" : "NavbarItems NavBarPadding"}>
+		<nav className={menuState ? "NavbarItems" : "NavbarItems NavBarPadding"} style={{padding: "6rem", marginTop:"-1.2rem"}}>
 			<Link to="/" className="nav-item">
-				<h1 className="navbar-logo">
+				<h1 className="navbar-logo" style={{padding: "2rem", marginLeft:"-4rem"}}>
 					SIENA<span>R</span>
 				</h1>
 			</Link>
@@ -67,15 +75,29 @@ export const NavBar = () => {
 					</Link>
 				</li>
 				<li className="nav-item">
-					<Link
-						to="/"
+					<button
 						className="nav-item separator"
-						onClick={() =>
-							menuState ? setMenuState(!menuState) : setMenuState(menuState)
+						
+
+						onClick={ () => {
+							if(language == true) {
+								i18n.changeLanguage("en");
+								setLanguage(false);
+							}
+							else if (language == false){
+								i18n.changeLanguage("es");
+								setLanguage(true);
+
+				
+
+							}
+
+						} 
+							
 						}
 					>
 						ENG/ESP
-					</Link>
+					</button>
 				</li>
 				<li className="nav-item ">
 					<DarkMode />
@@ -84,3 +106,5 @@ export const NavBar = () => {
 		</nav>
 	);
 };
+
+

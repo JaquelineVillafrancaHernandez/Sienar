@@ -12,6 +12,7 @@ import {
 	LogoV,
 } from "src/components/UI/atoms/icons";
 import "./Home.css";
+import { useTranslation } from "react-i18next";
 
 export const Home = () => {
 	const [loading, setLoading] = useState(true);
@@ -20,6 +21,7 @@ export const Home = () => {
 	const [days, setDays] = useState(0);
 	const storedTheme = localStorage.getItem("theme");
 	const [BGColor, setBGColor] = useState("");
+	const [t, i18n] = useTranslation("global");
 
 	function calcDays(parametro: string) {
 		const date_1 = new Date(parametro);
@@ -60,98 +62,96 @@ export const Home = () => {
 						<div className="info-projects">
 							<div className="info-box">
 								<h5 className="home-info">
-									+<span>{projects}</span> Completed Projects
+									+<span>{projects}</span> {t("home.projects")}
 								</h5>
 							</div>
 							<div className="info-box">
 								<h5 className="home-info">
-									+<span>{days}</span>  Days on Operation
+									+<span>{days}</span> {t("home.operation-days")}
 								</h5>
 							</div>
 						</div>
 					</div>
-					<h2 className="center">software development For The Enterprise</h2>
+					<h2 className="center">{t("home.title")}</h2>
 					<div className="intro">
 						<p className="">
-							With experience in machine learning and software development, we
-							use and develop technology to increase the competitiveness of your
-							business by focusing on user experience and innovation.
+						{t("home.first-paragraph")}
 						</p>
 					</div>
 					<div className="services">
 						<Service
 							type="left"
-							service="WEB DEVELOPMENT"
+							service={t("home.web-development")}
 							photo={"web" + BGColor}
 						/>
 						<Service
 							type="right"
-							service="MOBILE APPS"
+							service={t("home.mobile-apps")}
 							photo={"mobile" + BGColor}
 						/>
 						<Service
 							type="left"
-							service="CLOUD SERVICES "
+							service={t("home.cloud-services")}
 							photo={"cloud" + BGColor}
 						/>
-						<Service
-							type="right"
-							service="MACHINE LEARNING "
+						<Service  
+							type="machine"
+							service={t("home.machine-learning")}
 							photo={"machine" + BGColor}
 						/>
 						<Service
 							type="left"
-							service="ROBOTIC VISION"
+							service={t("home.robotic-vision")}
 							photo={"robotic" + BGColor}
 						/>
 						<Service
 							type="right"
-							service="BLOCKCHAIN"
+							service={t("home.blockchain")}
 							photo={"blockchain" + BGColor}
 						/>
 					</div>
 					<div className="process">
-						<h2>OUR PROCESS</h2>
+						<h2>{t("home.our-process")}</h2>
 						<div className="process-elements">
 							<div className="process-element">
 								<h5>
-									<span>1º</span>Analyse
+									<span>1º</span>{t("home.analyse")}
 								</h5>
 								<Analyse />
 							</div>
 
 							<div className="process-element down">
 								<h5>
-									<span>2º</span>Strategy
+									<span>2º</span>{t("home.strategy")}
 								</h5>
 								<Strategy />
 							</div>
 
 							<div className="process-element ">
 								<h5>
-									<span>3º</span>Implement
+									<span>3º</span>{t("home.implement")}
 								</h5>
 								<Implement />
 							</div>
 
 							<div className="process-element down">
 								<h5>
-									<span>4º</span>Development
+									<span>4º</span>{t("home.development")}
 								</h5>
 								<Development />
 							</div>
 
 							<div className="process-element">
 								<h5>
-									<span>5º</span>Follow Up
+									<span>5º</span>{t("home.follow-up")}
 								</h5>
 								<Follow />
 							</div>
 						</div>
 					</div>
 
-					<div style={{padding: "0 4rem", marginBottom:"5rem"}}>
-						<h2>WE ACCEPT CRYPTO</h2>
+					<div style={{padding: "0 2rem", marginBottom:"5rem"}}>
+						<h2>{t("home.crypto")}</h2>
 						<div className="cryptos-container">
 							<img
 								src="https://firebasestorage.googleapis.com/v0/b/sienar2022.appspot.com/o/bitcoin.png?alt=media&token=d89e1753-67cd-4913-97f5-3b3aa74b5f36"
